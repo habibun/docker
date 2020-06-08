@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: somepw
+      MYSQL_DATABASE: somedb
+    volumes:
+    - ./data:/var/lib/mysql
+
+  dbclient:
+    image: mysql:latest
+    depends_on:
+      - db
+    command: mysql -uroot -psomepw -hdb

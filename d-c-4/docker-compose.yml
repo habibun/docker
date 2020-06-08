@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  phpapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: phpapp:123
+    ports:
+      - "81:80"
+    volumes:
+    - ./:/var/www/html
+    container_name: phpapp-php
+
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: my!!!root!!!pw
+    container_name: phpapp-db
