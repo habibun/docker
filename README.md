@@ -33,7 +33,7 @@
 
 `docker push username/repository_name:version`
 
-###docker-compose
+### docker-compose
 `docker-compose build`
 
 `docker-compose up`
