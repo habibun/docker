@@ -4,62 +4,34 @@
 `docker login`
 
 ### container
-**list container**
+`docker ps` 
 
-`docker ps` [list running container]
-
-`docker ps -a` [list all container]
-
-**start container**
+`docker ps -a` 
 
 `docker start container_id/container_name`
-
-**attach container**
 
 `docker attach container_id/container_name`
 
-**stop container**
-
 `docker start container_id/container_name`
-
-
-**remove container**
 
 `docker rm 30fa container_id/container_name`
 
-
-**logs container**
-
 `docker logs container_id/container_name`
-
-
-**inspect container**
 
 `docker inspect container_id/container_name`
 
-
-**restart container**
 `docker restart container_name/container_id`
 
-
-
 ### image
-
-**list image**
 `docker image ls`
 
-**run image**
 `docker run repository_name/image_id`
 
-**remove image**
 `docker rmi repository_name/image_id`
 
-change tag
 `docker tag mycurl username/repository_name:version`
 
-push to docker hub
 `docker push username/repository_name:version`
-
 
 ###docker-compose
 `docker-compose build`
@@ -76,22 +48,14 @@ push to docker hub
 
 `docker-compose down`
 
-
-
 ### volume
-
-**list volume**
 `docker volume ls`
 
-**remove volume**
 `docker volume rm volume_name`
 
-**create volume**
 `docker volume create --name volume_name`
 
-
-
-**network**
+###network
 `docker network ls`
 
 `docker network prune`
@@ -101,9 +65,6 @@ push to docker hub
 `docker network create network_name`
 
 `docker run --rm -d --name web-server --network network_name image_name`
-
-
-
 
 **project cmd**
 * `docker run -it ubuntu /bin/bash`
@@ -122,7 +83,6 @@ push to docker hub
 * `docker run -d -p 8080:80 -v ${PWD}:/var/www/html php:7.2-apache`
 * `docker build -t myphpapp .`
 * `docker run -p 8080:80 phpapp:web`
-
 
 **argument description**
 * `-d` running in the background
