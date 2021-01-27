@@ -1,39 +1,69 @@
 # docker
-`docker system prune`
 
-`docker login`
 
-### container
+### Docker CLI reference
 `docker ps` => List containers
 
-`docker ps -a` 
+`docker ps -a` => Show all containers
 
-`docker start container_id/container_name`
+`docker start container_id/container_name` => Start one or more stopped containers
 
-`docker attach container_id/container_name`
+`docker stop container_id/container_name` => Stop one or more running containers
 
-`docker start container_id/container_name`
+`docker attach container_id/container_name` => Attach local standard input, output, and error streams to a running container
 
-`docker rm 30fa container_id/container_name`
+`docker rm container_id/container_name` => Remove one or more containers
 
-`docker logs container_id/container_name`
+`docker logs container_id/container_name` => Fetch the logs of a container
 
-`docker inspect container_id/container_name`
+`docker inspect container_id/container_name` => Return low-level information on Docker objects
 
-`docker restart container_name/container_id`
+`docker restart container_name/container_id` => Restart one or more containers
 
-### image
-`docker image ls`
+`docker system prune` => Remove unused data
 
-`docker run repository_name/image_id`
-
-`docker rmi repository_name/image_id`
+`docker login` => Log in to a Docker registry
 
 `docker tag mycurl username/repository_name:version`
 
 `docker push username/repository_name:version`
 
-### docker-compose
+    ######Image
+
+`docker run repository_name:tag/image_id` => Run a command in a new container
+
+`docker rmi repository_name:tag/image_id` => Remove one or more images
+
+
+
+### Docker Container CLI reference 
+
+`docker container ls` => List containers
+
+`docker container prune` => Remove all stopped containers
+
+`docker container stop CONTAINER` => Stop one or more running containers
+
+
+
+### Docker Image CLI reference 
+
+`docker image ls` => List images
+
+`docker image inspect repository_name:tag/image_id` => Display detailed information on one or more images
+
+`docker image history repository_name:tag/image_id` => Show the history of an image
+
+`docker image pull repository_name:tag/image_id` => Pull an image or a repository from a registry
+
+`docker image rm repository_name:tag/image_id` => Remove one or more images
+
+`docker image prune` => Remove unused images
+
+
+
+### docker-compose CLI reference
+
 `docker-compose build`
 
 `docker-compose up`
@@ -48,14 +78,20 @@
 
 `docker-compose down`
 
-### volume
+
+
+### Docker Volume CLI reference
+
 `docker volume ls`
 
 `docker volume rm volume_name`
 
 `docker volume create --name volume_name`
 
-###network
+
+
+### Docker network CLI reference
+
 `docker network ls`
 
 `docker network prune`
@@ -66,7 +102,9 @@
 
 `docker run --rm -d --name web-server --network network_name image_name`
 
-**project cmd**
+
+
+**Random CLI**
 * `docker run -it ubuntu /bin/bash`
 * `docker run -it -d --rm --name ubuntu ubuntu /bin/bash`
 * `docker run --rm -v ${PWD}:/myvol ubuntu /bin/bash -c "ls -lha > /myvol/myfile.txt"`
@@ -84,7 +122,8 @@
 * `docker build -t myphpapp .`
 * `docker run -p 8080:80 phpapp:web`
 
-**argument description**
+
+**Argument reference**
 * `-d` running in the background
 * `--rm` remove container
 * `--name` name of the container
