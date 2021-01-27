@@ -4,7 +4,7 @@
 `docker login`
 
 ### container
-`docker ps` 
+`docker ps` => List containers
 
 `docker ps -a` 
 
