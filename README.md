@@ -1,5 +1,14 @@
-# docker
+## About The Project
+[Docker][docker_website] resources for learning and practicing.
 
+
+## Learn More
+- [The Docker Handbook – Learn Docker for Beginners](https://www.freecodecamp.org/news/the-docker-handbook/#how-to-run-a-container)
+- [A PHP development environment generator built with Docker containers.](https://phpdocker.io/)
+- [Introduction to Containers](https://container.training/intro-selfpaced.yml.html#1)
+
+
+## Reference
 
 ### Docker CLI reference
 `docker ps` => List containers
@@ -132,3 +141,13 @@
 * `-w`  working directory
 * `-p`  port binding
 * `-t`  tagging
+
+
+---
+## License
+Distributed under the MIT License. See **[LICENSE][license]** for more information.
+
+
+[//]: # (Links)
+[docker_website]: https://www.docker.com/
+[license]: https://github.com/habibun/docker/blob/main/LICENSE
