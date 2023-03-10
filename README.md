@@ -150,4 +150,4 @@ Distributed under the MIT License. See **[LICENSE][license]** for more informati
 
 [//]: # (Links)
 [docker_website]: https://www.docker.com/
-[license]: https://github.com/habibun/docker/blob/main/LICENSE
+[license]: https://github.com/habibun/docker/blob/master/LICENSE
