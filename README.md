@@ -37,7 +37,8 @@
 
 `docker push username/repository_name:version`
 
-    ######Image
+
+### Image
 
 `docker run repository_name:tag/image_id` => Run a command in a new container
 
