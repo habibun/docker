@@ -3,12 +3,32 @@
 
 
 ## Learn More
+- [Getting Started](https://docs.docker.com/get-started/)
 - [The Docker Handbook – Learn Docker for Beginners](https://www.freecodecamp.org/news/the-docker-handbook/#how-to-run-a-container)
 - [A PHP development environment generator built with Docker containers.](https://phpdocker.io/)
 - [Introduction to Containers](https://container.training/intro-selfpaced.yml.html#1)
 
 
-## Reference
+## CLI
+```bash
+# Build the container image.
+docker build -t <image_name> <path>
+
+# Start container
+docker run -dp 3000:3000 <image_name>
+
+# Get the ID of the container
+docker ps
+
+# stop the container
+docker stop <the-container-id>
+
+#  Remove container
+docker rm <the-container-id>
+
+# Run the following docker ps command in a terminal to list your containers.
+docker ps
+```
 
 ### Docker CLI reference
 `docker ps` => List containers
