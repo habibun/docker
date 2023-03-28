@@ -4,65 +4,102 @@
 
 ## Learn More
 - [Getting Started](https://docs.docker.com/get-started/)
+- [Reference documentation](https://docs.docker.com/reference/)
 - [The Docker Handbook – Learn Docker for Beginners](https://www.freecodecamp.org/news/the-docker-handbook/#how-to-run-a-container)
 - [A PHP development environment generator built with Docker containers.](https://phpdocker.io/)
 - [Introduction to Containers](https://container.training/intro-selfpaced.yml.html#1)
 
 
-## CLI
+## CLI Reference
+
+
+<details>
+
+<summary>Docker</summary>
+
+### The base command for the Docker CLI.
+
+
 ```bash
-# Build the container image.
-docker build -t <image_name> <path>
-
-# Start container
-docker run -dp 3000:3000 <image_name>
-
-# Get the ID of the container
+# List running containers
 docker ps
+``` 
 
-# stop the container
-docker stop <the-container-id>
 
-#  Remove container
-docker rm <the-container-id>
-
-# Run the following docker ps command in a terminal to list your containers.
-docker ps
+```bash
+# List all containers
+docker ps -a
 ```
 
-### Docker CLI reference
-`docker ps` => List containers
+```bash
+# Start stopped containers
+docker start container_id/container_name
+```
 
-`docker ps -a` => Show all containers
+```bash
+# Stop one or more running containers
+docker stop container_id/container_name
+```
 
-`docker start container_id/container_name` => Start one or more stopped containers
+```bash
+# Attach local standard input, output, and error streams to a running container
+docker attach container_id/container_name
+```
 
-`docker stop container_id/container_name` => Stop one or more running containers
+```bash
+# Remove one or more containers
+docker rm container_id/container_name
+```
 
-`docker attach container_id/container_name` => Attach local standard input, output, and error streams to a running container
+```bash
+# Fetch the logs of a container
+docker logs container_id/container_name
+```
 
-`docker rm container_id/container_name` => Remove one or more containers
+```bash
+# Return low-level information on Docker objects
+docker inspect container_id/container_name
+```
 
-`docker logs container_id/container_name` => Fetch the logs of a container
+```bash
+docker restart container_name/container_id` => Restart one or more containers
+```
 
-`docker inspect container_id/container_name` => Return low-level information on Docker objects
-
-`docker restart container_name/container_id` => Restart one or more containers
-
+```bash
 `docker system prune` => Remove unused data
+```
 
-`docker login` => Log in to a Docker registry
+```bash
+docker login` => Log in to a Docker registry
+```
 
-`docker tag mycurl username/repository_name:version`
+```bash
+docker tag mycurl username/repository_name:version`
+```
 
-`docker push username/repository_name:version`
+```bash
+docker push username/repository_name:version`
+```
+##
+
+</details>
 
 
-### Image
+
+<details>
+
+<summary>docker image</summary>
+
+### Manage images
 
 `docker run repository_name:tag/image_id` => Run a command in a new container
 
 `docker rmi repository_name:tag/image_id` => Remove one or more images
+
+##
+
+</details>
+
 
 
 
