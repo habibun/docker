@@ -198,7 +198,7 @@ docker-compose rm
 
 ```bash
 # Tear it all down
-docker-compose down`
+docker-compose down
 ```
 ##
 
@@ -240,19 +240,19 @@ docker network ls
 ```
 
 ```bash 
-docker network prune`
+docker network prune
 ```
 
 ```bash 
-docker inspect container_name/container_id`
+docker inspect container_name/container_id
 ```
 
 ```bash 
-docker network create network_name`
+docker network create network_name
 ```
 
 ```bash 
-docker run --rm -d --name web-server --network network_name image_name`
+docker run --rm -d --name web-server --network network_name image_name
 ```
 
 ##
