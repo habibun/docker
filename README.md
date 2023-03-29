@@ -4,6 +4,7 @@
 
 ## Learn More
 - [Getting Started](https://docs.docker.com/get-started/)
+- [What next](https://docs.docker.com/get-started/11_what_next/)
 - [Reference documentation](https://docs.docker.com/reference/)
 - [The Docker Handbook – Learn Docker for Beginners](https://www.freecodecamp.org/news/the-docker-handbook/#how-to-run-a-container)
 - [A PHP development environment generator built with Docker containers.](https://phpdocker.io/)
@@ -131,6 +132,20 @@ docker push username/repository_name:version`
 
 ### docker-compose CLI reference
 
+```bash
+# Check version
+docker compose version
+```
+
+```bash
+# the logs from each of the services interleaved into a single stream
+docker compose logs -f
+```
+```bash
+# the logs from specific services
+docker compose logs -f app
+```
+
 `docker-compose build`
 
 `docker-compose up`
@@ -143,8 +158,11 @@ docker push username/repository_name:version`
 
 `docker-compose rm`
 
-`docker-compose down`
 
+```bash
+# Tear it all down
+docker-compose down`
+```
 
 
 ### Docker Volume CLI reference
