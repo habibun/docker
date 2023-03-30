@@ -238,23 +238,23 @@ docker volume create --name volume_name
 ### Docker network CLI reference
 
 ```bash 
+# List networks
 docker network ls
 ```
 
 ```bash 
+# Remove all unused networks
 docker network prune
 ```
 
 ```bash 
+# Display detailed information on one or more networks
 docker inspect container_name/container_id
 ```
 
 ```bash 
+# Create a network
 docker network create network_name
-```
-
-```bash 
-docker run --rm -d --name web-server --network network_name image_name
 ```
 
 ##
