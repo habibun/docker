@@ -108,7 +108,7 @@ docker container stop CONTAINER
 
 ### Docker Image CLI reference
 ```bash
-#  List images
+# List images
 docker image ls
 ```
 
@@ -157,11 +157,11 @@ docker compose version
 ```
 
 ```bash
-# the logs from each of the services interleaved into a single stream
+# Logs from each of the services interleaved into a single stream
 docker compose logs -f
 ```
 ```bash
-# the logs from specific services
+# Logs from specific services
 docker compose logs -f app
 ```
 
