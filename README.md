@@ -211,14 +211,17 @@ docker compose down
 ### Docker Volume CLI reference
 
 ```bash
+# List volumes
 docker volume ls
 ```
 
 ```bash
+# Remove one or more volumes
 docker volume rm volume_name
 ```
 
 ```bash
+# Create a volume
 docker volume create --name volume_name
 ```
 
