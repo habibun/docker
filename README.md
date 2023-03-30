@@ -167,38 +167,37 @@ docker compose logs -f app
 
 
 ```bash
-docker-compose build
+# Build or rebuild services
+docker compose build
 ```
 
 
 ```bash
-docker-compose up
+# Create and start containers
+docker compose up
+
+# Options
+docker compose up -d
+docker compose up --build
+docker compose up container_name/container_id
+```
+
+```bash
+# Stop services
+docker compose stop
+
 ```
 
 
 ```bash
-docker-compose up container_name/container_id
+# Removes stopped service containers
+docker compose rm
 ```
 
 
 ```bash
-docker-compose up -d
-```
-
-
-```bash
-docker-compose up --build
-```
-
-
-```bash
-docker-compose rm
-```
-
-
-```bash
-# Tear it all down
-docker-compose down
+# Stop and remove containers, networks
+docker compose down
 ```
 ##
 
