@@ -266,7 +266,6 @@ docker network create network_name
 - [What next](https://docs.docker.com/get-started/11_what_next/)
 - [The Docker Handbook – Learn Docker for Beginners](https://www.freecodecamp.org/news/the-docker-handbook/)
 - [Reference documentation](https://docs.docker.com/reference/)
-- [The Docker Handbook – Learn Docker for Beginners](https://www.freecodecamp.org/news/the-docker-handbook/#how-to-run-a-container)
 - [A PHP development environment generator built with Docker containers.](https://phpdocker.io/)
 - [Introduction to Containers](https://container.training/intro-selfpaced.yml.html#1)
 
